@@ -1,0 +1,4 @@
+include ':utils'
+include ':plugins'
+include ':app'
+rootProject.name = "Sample"

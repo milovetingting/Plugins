@@ -1,0 +1,30 @@
+//插件开发
+apply plugin: 'groovy'
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:3.4.2'
+}
+
+//插件发布到本地仓库
+/*apply plugin: 'maven-publish'
+publishing{
+    publications{
+        mavenJava(MavenPublication){
+            groupId 'com.wangyz.plugins'
+            artifactId 'DebouncePlugin'
+            version '1.0.0'
+
+            from components.java
+        }
+    }
+    repositories {
+        maven{
+            url uri('D:\\Repository')
+        }
+    }
+}*/
+
+//插件发布到远程仓库
+//apply from: 'upload_plugin.gradle'
